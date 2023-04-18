@@ -1,0 +1,143 @@
+.card-img-top {
+    border-radius: 0;
+}
+
+.vendor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.vendor-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ff0000f6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 192, 203, 0.5);
+    transition: all 0.3s ease;
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.vendor-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vendor-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.vendor-details {
+    padding: 10px;
+}
+
+.vendor-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.vendor-venue {
+    margin-bottom: 0;
+}
+
+/* .homepage {
+    background-image: url('./wedding2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+} */
+
+.vendor-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.vendor-info p {
+    margin-bottom: 5px;
+}
+
+.information {
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.information h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #b83b5e;
+}
+
+.information p {
+    margin-bottom: 10px;
+}
+
+.information a {
+    color: #b83b5e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+.coor {
+    padding: 2px;
+    animation-name: shadow-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shadow-color {
+    0% {
+        box-shadow: 0 0 10px yellow;
+    }
+
+    50% {
+        box-shadow: 0 0 10px pink;
+    }
+
+    100% {
+        box-shadow: 0 0 10px yellow;
+    }
+}
+
+
+
+
+
+
+
+h2 {
+    color: #be8787;
+}
+
+.h2c {
+    color: #f7f7f7;
+}
+
+h3 {
+    color: yellow;
+}

@@ -1,0 +1,132 @@
+body {
+    background-color: transparent;
+    overflow: hidden;
+    background-size: cover;
+    ;
+}
+
+.background-image {
+
+    background-repeat: no-repeat;
+    /* add other styles as needed */
+}
+
+.registration-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.registration-card {
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.registration-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.name-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name-inputs label {
+    width: 100px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+select,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+button {
+    background-color: #b462a5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button,
+.cancel-button {
+    margin: 4px;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+.form-group select,
+.form-group input[type="date"],
+.form-group input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.x {
+    width: 100%;
+}

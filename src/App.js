@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Webpage from "./webpage";
+import RegisterationPage from "./registerationPage";
+import HomePage from "./homepage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  const [formData, setFormData] = useState(null);
+
+  const handleFormSubmit = (data) => {
+    setFormData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Webpage />} />
+          <Route
+            path="/registeration"
+            element={<RegisterationPage onSubmit={handleFormSubmit} />}
+          />
+          <Route path="/homepage" element={<HomePage data={formData} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
