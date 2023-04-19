@@ -31,19 +31,44 @@ function NavigationBar() {
         <img src={logo} alt="Riti Riwaz logo" className="logo1" />
       </a>
       <div className="navbar-links">
-        <a href="#l1" smooth={true} className="navbar-link">
+        <a
+          style={{ color: "rgb(254, 172, 172)" }}
+          href="#l1"
+          smooth={true}
+          className="navbar-link"
+        >
           Photographers
         </a>
-        <a href="#l2" smooth={true} className="navbar-link">
+        <a
+          style={{ color: "rgb(254, 172, 172)" }}
+          href="#l2"
+          smooth={true}
+          className="navbar-link"
+        >
           Makeup &amp; Hair
         </a>
-        <a href="#l3" smooth={true} className="navbar-link">
+        <a
+          style={{ color: "rgb(254, 172, 172)" }}
+          href="#l3"
+          smooth={true}
+          className="navbar-link"
+        >
           Catering
         </a>
-        <a href="#l4" smooth={true} className="navbar-link">
+        <a
+          style={{ color: "rgb(254, 172, 172)" }}
+          href="#l4"
+          smooth={true}
+          className="navbar-link"
+        >
           Hotels
         </a>
-        <a href="#l5" smooth={true} className="navbar-link">
+        <a
+          style={{ color: "rgb(254, 172, 172)" }}
+          href="#l5"
+          smooth={true}
+          className="navbar-link"
+        >
           Mehndi Artist
         </a>
         <a
@@ -124,9 +149,19 @@ function Homepage({ data }) {
         venue: "City Hall",
       },
       {
+        name: "John Smith",
+        image: p1,
+        venue: "City Hall",
+      },
+      {
         name: "Jane Doe",
         image: p2,
         venue: "Beach",
+      },
+      {
+        name: "John Smith",
+        image: p1,
+        venue: "City Hall",
       },
       {
         name: "John Smith",
@@ -156,12 +191,32 @@ function Homepage({ data }) {
         venue: "Hotel",
       },
       {
+        name: "Sarah Johnson",
+        image: mk1,
+        venue: "Hotel",
+      },
+      {
         name: "Emily Davis",
         image: mk2,
         venue: "Banquet Hall",
       },
+      {
+        name: "Sarah Johnson",
+        image: mk1,
+        venue: "Hotel",
+      },
     ],
     catering: [
+      {
+        name: "Tom Lee",
+        image: c1,
+        venue: "Backyard",
+      },
+      {
+        name: "Amy Chen",
+        image: c2,
+        venue: "Garden",
+      },
       {
         name: "Tom Lee",
         image: c1,
@@ -204,8 +259,28 @@ function Homepage({ data }) {
         image: ht2,
         venue: "Beach Front",
       },
+      {
+        name: "Hotel 1",
+        image: ht1,
+        venue: "City Center",
+      },
+      {
+        name: "Hotel 2",
+        image: ht2,
+        venue: "Beach Front",
+      },
     ],
     mehndi: [
+      {
+        name: "Samantha Lee",
+        image: mn1,
+        venue: "Banquet Hall",
+      },
+      {
+        name: "Mary Williams",
+        image: mn2,
+        venue: "Hotel",
+      },
       {
         name: "Samantha Lee",
         image: mn1,
