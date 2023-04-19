@@ -5,7 +5,7 @@ body {
     ;
 }
 
-.background-image {
+.backgroundImage {
 
     background-repeat: no-repeat;
     /* add other styles as needed */
@@ -13,7 +13,7 @@ body {
 
 .registration-container {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body {
 .registration-card {
     border-radius: 5px;
     width: 400px;
-    padding: 10px;
+    padding: 30px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -55,6 +55,7 @@ body {
 }
 
 .input-group {
+    border: none;
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -89,7 +90,7 @@ button {
 }
 
 button {
-    background-color: #b462a5;
+    background-color: #ff8bcb;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -129,4 +130,22 @@ button {
 
 .x {
     width: 100%;
+}
+
+.logo2 {
+    margin-left: 20px;
+    width: 8rem;
+    height: 4.4rem;
+}
+
+.registerhead {
+    margin-left: 9%;
+}
+
+.y {
+    background-color: #da9393;
+}
+
+input::placeholder {
+    color: white;
 }

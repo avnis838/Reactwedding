@@ -1,5 +1,8 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./home.css";
+import logo from "./logo.png";
+
 import p1 from "./photographer1.jpg";
 import p2 from "./photographer2.jpg";
 import p3 from "./photographer1.jpg";
@@ -20,6 +23,47 @@ import ht1 from "./hotel1.jpg";
 import ht2 from "./hotel2.jpg";
 import ht3 from "./hotel1.jpg";
 import ht4 from "./hotel2.jpg";
+
+function NavigationBar() {
+  return (
+    <nav className="navbar">
+      <a href="/homepage" className="navbar-brand">
+        <img src={logo} alt="Riti Riwaz logo" className="logo1" />
+      </a>
+      <div className="navbar-links">
+        <a href="#l1" smooth={true} className="navbar-link">
+          Photographers
+        </a>
+        <a href="#l2" smooth={true} className="navbar-link">
+          Makeup &amp; Hair
+        </a>
+        <a href="#l3" smooth={true} className="navbar-link">
+          Catering
+        </a>
+        <a href="#l4" smooth={true} className="navbar-link">
+          Hotels
+        </a>
+        <a href="#l5" smooth={true} className="navbar-link">
+          Mehndi Artist
+        </a>
+        <a
+          href="/registeration"
+          style={{
+            backgroundColor: "#ff8dad",
+            border: "2px solid #ff8dad",
+            padding: "3px",
+            borderRadius: "2px",
+            color: "white",
+            fontSize: "16px",
+          }}
+          className="navbar-brand"
+        >
+          Register
+        </a>
+      </div>
+    </nav>
+  );
+}
 
 function Vendors({ type, vendors }) {
   return (
@@ -186,125 +230,140 @@ function Homepage({ data }) {
   };
 
   return (
-    <div className="homepage">
-      <h2
-        className="coor h2c"
-        style={{
-          textAlign: "center",
-          marginBottom: "20px",
-          position: "relative",
-          color: "#fffffff",
-          textShadow: "2px 2px 4px #ff5a89",
-        }}
-      >
-        Welcome to our Wedding Planning page!
-        <span
+    <body>
+      <div className="homepage">
+        <NavigationBar />
+        <h2
+          className="coor h2c"
           style={{
-            position: "absolute",
-            bottom: "-10px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            borderBottom: "2px solid pink",
-            width: "100vw",
+            textAlign: "center",
+            marginBottom: "20px",
+            position: "relative",
+            color: "#fffffff",
+            textShadow: "2px 2px 4px #ff5a89",
           }}
-        ></span>
-      </h2>
-      <div
-        style={{
-          borderRadius: "100px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          marginTop: "0px",
-          maxHeight: "500px",
-          overflowY: "scroll",
-          position: "relative",
-        }}
-      >
+        >
+          Welcome to our Wedding Planning page!
+          {/* <span
+            style={{
+              position: "absolute",
+              bottom: "-10px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              borderBottom: "2px solid pink",
+              width: "100vw",
+            }}
+          ></span> */}
+        </h2>
         <div
-          className="information coor"
           style={{
+            borderRadius: "0px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "50px",
+            marginTop: "0px",
             maxHeight: "500px",
+            overflowY: "scroll",
             position: "relative",
-            width: "80%",
-            height: "500px",
           }}
         >
-          <h3
-            style={{
-              textAlign: "center",
-              marginBottom: "20px",
-              color: "#FF69B4",
-              fontSize: "2rem",
-              textShadow: "2px 2px 4px #000000",
-              zIndex: 1,
-            }}
-          >
-            Your Information
-          </h3>
           <div
+            className="information coor"
             style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
-              zIndex: 1,
+              marginTop: "50px",
+              marginBottom: "50px",
+              maxHeight: "500px",
+              position: "relative",
+              width: "80%",
+              height: "500px",
+              backgroundColor: "#ffe3f5",
             }}
           >
-            <p
+            <h3
               style={{
                 textAlign: "center",
-                fontWeight: "bold",
-                marginBottom: "10px",
+                marginBottom: "20px",
                 color: "#FF69B4",
-                fontSize: "1.5rem",
+                fontSize: "2rem",
+                textShadow: "2px 2px 4px #000000",
+                zIndex: 1,
               }}
             >
-              Your name: {myInfo.name}
-            </p>
+              Your Information
+            </h3>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                zIndex: 1,
               }}
             >
               <p
                 style={{
                   textAlign: "center",
+                  fontWeight: "bold",
                   marginBottom: "10px",
-                  color: "#FFD700",
-                  fontSize: "1.2rem",
+                  color: "#FF69B4",
+                  fontSize: "1.5rem",
                 }}
               >
-                Entered Venue: {myInfo.venue}
+                Your name: {myInfo.name}
               </p>
-              <p
+              <div
                 style={{
-                  textAlign: "center",
-                  marginBottom: "10px",
-                  color: "#FFD700",
-                  fontSize: "1.2rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
-                Wedding Date: {myInfo.date}
-              </p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    marginBottom: "10px",
+                    color: "#FFD700",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                  Entered Venue: {myInfo.venue}
+                </p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    marginBottom: "10px",
+                    color: "#FFD700",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                  Wedding Date: {myInfo.date}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <Vendors type="Photographers" vendors={vendors.photographers} />
-        <Vendors type="Makeup & Hair" vendors={vendors.makeup} />
-        <Vendors type="Catering" vendors={vendors.catering} />
-        <Vendors type="Hotels" vendors={vendors.hotels} />
-        <Vendors type="Mehndi Artist" vendors={vendors.mehndi} />
+          <section className="even" id="l1">
+            <Vendors type="Photographers" vendors={vendors.photographers} />
+          </section>
+          <section className="odd" id="l2">
+            <Vendors type="Makeup & Hair" vendors={vendors.makeup} />
+          </section>
+          <section className="even" id="l3">
+            <Vendors type="Catering" vendors={vendors.catering} />
+          </section>
+          <section className="odd" id="l4">
+            <Vendors type="Hotels" vendors={vendors.hotels} />
+          </section>
+          <section className="even" id="l5">
+            <Vendors type="Mehndi Artist" vendors={vendors.mehndi} />
+          </section>
+        </div>
       </div>
-    </div>
+    </body>
   );
 }
 
